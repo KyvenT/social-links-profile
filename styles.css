@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.inter {
+    font-family: "Inter";
+}
+body {
+    background-color: hsl(0, 0%, 8%);
+}
+.container {
+    width: 100%;
+    min-height: 100vh;
+}
+.profile-card {
+    width: 35%;
+    max-width: 50%;
+    background: hsl(0, 0%, 12%);
+    margin: auto;
+    padding: 5px;
+    border-radius: 3%;
+}
+.profilePicture {
+    border-radius: 100%;
+    max-width: 100%;
+    width: 25%;
+}
+.name {
+    color: white;
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 700;
+}
+.location{
+    color: hsl(75, 94%, 57%);
+    font-size: 1em;
+    font-weight: 600;
+}
+.bio {
+    color: #ddd;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.center-vert-horiz {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center-text {
+    text-align: center;
+}
+.links {
+    list-style-type: none;
+    padding-left: 0;
+}
+.link {
+    width: 80%;
+    max-width: 80%;
+    background-color: hsl(0, 0%, 20%);
+    border-radius: 5px;
+    padding: 1.5vw 0;
+    margin: 1.5vw auto;
+    color: white;
+    font-size: .75em;
+    font-weight: 600;
+}
+.link:hover {
+    background-color: hsl(75, 94%, 57%)
+}
+@media (max-width: 768px) {
+    .profile-card {
+        width: 50%;
+        max-width: 50%;
+    }
+    .name {
+        font-size: 1.5em;
+    }
+    .location, .bio {
+        font-size: 1em;
+    }
+    .link {
+        font-size: .75em;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-card {
+        width: 80%;
+        max-width: 80%;
+    }
+}
